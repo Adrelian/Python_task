@@ -49,24 +49,41 @@
 #
 #
 # oct_to_dec(n)
-
+#
 #Задача 4: Дробные числа перевести в целые со степенью, где основание 1 ≤ a < 10
+#
+# n = float(input("Введите число: "))
+#
+#
+# def number_with_degree(number):
+#     count = 0
+#     if number >= 10:
+#         while number >= 10:
+#             number = number / 10
+#             count += 1
+#
+#     if number <= 1:
+#         while number <= 1:
+#             number = number * 10
+#             count +=1
+#
+#     print(f"{number}*10^-{count}")
+#
+# number_with_degree(n)
 
-n = float(input("Введите число: "))
+# Задача 6: Найти наименьшую дробь числа
+
+n = float(input("Введите десятичную дробь: "))
 
 
-def number_with_degree(number):
-    count = 0
-    if number >= 10:
-        while number >= 10:
-            number = number / 10
-            count += 1
+def find_simple_fraction(dec_float_number):
+    counter = 0
 
-    if number <= 1:
-        while number <= 1:
-            number = number * 10
-            count +=1
+    while dec_float_number % 10 != 0:
+        dec_float_number *= 10
+        counter += 1
+        print(dec_float_number, counter)
 
-    print(f"{number}*10^-{count}")
 
-number_with_degree(n)
+
+find_simple_fraction(n)
