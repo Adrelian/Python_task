@@ -50,9 +50,23 @@
 #
 # oct_to_dec(n)
 
-#Задача 4: Дробные числа перевести в целые со степень, где основание 1 ≤ a < 10
+#Задача 4: Дробные числа перевести в целые со степенью, где основание 1 ≤ a < 10
 
-n = int(input("Введите число: "))
+n = float(input("Введите число: "))
 
 
 def number_with_degree(number):
+    count = 0
+    if number >= 10:
+        while number >= 10:
+            number = number / 10
+            count += 1
+
+    if number <= 1:
+        while number <= 1:
+            number = number * 10
+            count +=1
+
+    print(f"{number}*10^-{count}")
+
+number_with_degree(n)
