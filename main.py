@@ -38,3 +38,15 @@
 #
 #
 # bin_to_dec(n)
+#
+#Задача 3: Из восьмиричной в десятичную
+# n = input("Введите число в восьмеричной системе счисления: ")
+#
+#
+# def oct_to_dec(number_hex):
+#     number_dec = int(number_hex, base = 8)
+#     print(f"{number_hex} в десятичной {number_dec}")
+#
+#
+# oct_to_dec(n)
+
