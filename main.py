@@ -77,13 +77,10 @@ n = float(input("Введите десятичную дробь: "))
 
 
 def find_simple_fraction(dec_float_number):
-    counter = 0
-
-    while dec_float_number % 10 != 0:
-        dec_float_number *= 10
-        counter += 1
-        print(dec_float_number, counter)
-
+    dec_float_number = round(dec_float_number, 3)
+    print(dec_float_number)
+    float_number = int(dec_float_number * pow(10, 3))
+    print(float_number)
 
 
 find_simple_fraction(n)
