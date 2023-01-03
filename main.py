@@ -39,7 +39,7 @@
 #
 # bin_to_dec(n)
 #
-#Задача 3: Из восьмиричной в десятичную
+# Задача 3: Из восьмиричной в десятичную
 # n = input("Введите число в восьмеричной системе счисления: ")
 #
 #
@@ -50,7 +50,7 @@
 #
 # oct_to_dec(n)
 #
-#Задача 4: Дробные числа перевести в целые со степенью, где основание 1 ≤ a < 10
+# Задача 4: Дробные числа перевести в целые со степенью, где основание 1 ≤ a < 10
 #
 # n = float(input("Введите число: "))
 #
@@ -77,10 +77,35 @@ n = float(input("Введите десятичную дробь: "))
 
 
 def find_simple_fraction(dec_float_number):
-    dec_float_number = round(dec_float_number, 3)
-    print(dec_float_number)
-    float_number = int(dec_float_number * pow(10, 3))
-    print(float_number)
+    denominator = 1  # знаменатель.
+    fractional_part = dec_float_number % 1  # десятичная дробная часть
+    save_number = dec_float_number
+    # Представляем дробь в виде dec_float_number / 1
+    while fractional_part != 0:
+        dec_float_number = dec_float_number * 10  # сдвигаем запятую на один вправо
+        fractional_part = dec_float_number % 1  # снова ищем числа после запятой
+        denominator *= 10
+
+    numeral = int(dec_float_number)  # числитель в int
+
+    # максимальный делитель для числителя
+    for n in range(numeral - 1, 1, -1):
+        if numeral % n == 0:
+            max_number1 = n
+            break
+
+    # максимальный делитель для знаменателя
+    for n in range(denominator - 1, 1, -1):
+        if denominator % n == 0:
+            max_number2 = n
+            break
+
+    print(f"Десятичная дробь {save_number} в простую {numeral}/{denominator}")
+
+    print(f"Наибольший делитель {numeral} равен {max_number1}")
+    print(f"Наибольший делитель {denominator} равен {max_number2}")
+
+    print(f"Простая дробь для числа {save_number} равно {int(numeral / max_number1)}/{int(denominator / max_number2)}")
 
 
 find_simple_fraction(n)
