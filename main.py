@@ -17,6 +17,8 @@
 #
 #
 # dec_to_bin(number_dec)
+import math
+
 
 # Задача 1: Из разных систем в десятичную
 # n = input("Введите число: ")
@@ -210,6 +212,20 @@
 #     n = 5
 #     o = abs(pow(m, 2 * m - 1) - 35.5) / (3 * n + 0.8 * m) * 2
 #     print(round(o, 2))
+#
+#
+# find_result()
+#
+# Задача 14. Вычислите значение арифметического выражения при заданных значениях переменных
+# и выведите полученный результат на экран: log4(7x - 3y) + √(lg|10xy|) при x=4, y=-3.
+#
+# from math import sqrt
+# from math import log2, log10
+# def find_result():
+#     x = 4
+#     y = -3
+#     z = log2(7 * x - 3 * y) + sqrt(log10(abs(10 * x * y)))
+#     print(round(z, 2))
 #
 #
 # find_result()
