@@ -337,6 +337,16 @@
 #
 #
 # str_index()
-
-
-
+#
+# Задача 24. Дана строка 'AaBbCcDd'. Используя срезы с шагом получите две строки:
+# только с заглавными и только со строчными буквами. Выведите их на экран.
+#
+# def slices():
+#     first_string = str('AaBbCcDd')
+#     second_string = first_string[0:len(first_string):2]
+#     print(second_string)
+#     third_string = first_string[1:len(first_string):2]
+#     print(third_string)
+#
+#
+# slices()
