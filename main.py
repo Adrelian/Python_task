@@ -298,15 +298,27 @@
 # find_result()
 #
 # Задачи по строкам
-
-def user_input():
-    number_int = int(input("Введите целое число: "))
-    number_float = float(input("Введите дробное десятичное число: "))
-    number_complex = complex(input("Введите комплексное число: "))
-
-    print(f"Числа в формате string: {number_int}, {number_float}, {number_complex}")
-    print(f'Числа в формате string: {number_int}, {number_float}, {number_complex}')
-
-user_input()
-
+#
+# def user_input():
+#     number_int = int(input("Введите целое число: "))
+#     number_float = float(input("Введите дробное десятичное число: "))
+#     number_complex = complex(input("Введите комплексное число: "))
+#
+#     print(f"Числа в формате string: {number_int}, {number_float}, {number_complex}")
+#     print(f'Числа в формате string: {number_int}, {number_float}, {number_complex}')
+#
+# user_input()
+#
+# Задача 22. Составьте и выведите на экран пользователя строку-матрешку
+# с содержимым «'4 + "3 + '2 + "1 + '0' " ' " '».
+# Реализуйте вывод четырьмя способами, использовав в качестве внешних все виды кавычек, разрешенных для строк.
+#
+# def matreshka():
+#     n = int(input("Введите число: "))
+#     end = 0
+#     while n > end:
+#         print(f'"{n}" + ', end="")
+#         n = n - 1
+#
+# matreshka()
 
