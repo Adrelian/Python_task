@@ -240,3 +240,27 @@ import math
 #     print(round(o, 2))
 #
 # find_result()
+#
+# Задача 16. Запишите арифметическое выражение на языке Python,
+# а затем выведите полученный результат на экран: cos2(3a - 1) - sin(5a - b)3.
+#
+#
+# def find_result():
+#     a = int(input('Введите a: '))
+#     b = int(input('Введите b: '))
+#     c = (1 + math.cos(2 * (3 * a - 1))) - math.sin(5 * a - b) * 3
+#     print(round(c, 2))
+#
+# find_result()
+#
+# Задача 17. Запишите арифметическое выражение на языке Python,
+# а затем выведите полученный результат на экран: 3tg|√(x + y2) - π| - arctg3(√x + y2).
+
+def find_result():
+    x = int(input('Введите х: '))
+    y = int(input('Введите y: '))
+    z = 3 * math.tan(abs(math.sqrt(x + y * 2) - math.pi)) - math.atan(3 * (math.sqrt(x) + y * 2))
+    print(round(z, 2))
+
+
+find_result()
