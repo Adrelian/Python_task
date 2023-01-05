@@ -255,11 +255,24 @@ import math
 #
 # Задача 17. Запишите арифметическое выражение на языке Python,
 # а затем выведите полученный результат на экран: 3tg|√(x + y2) - π| - arctg3(√x + y2).
+#
+# def find_result():
+#     x = int(input('Введите х: '))
+#     y = int(input('Введите y: '))
+#     z = 3 * math.tan(abs(math.sqrt(x + y * 2) - math.pi)) - math.atan(3 * (math.sqrt(x) + y * 2))
+#     print(round(z, 2))
+#
+#
+# find_result()
 
+# Задача 18. Запишите арифметическое выражение на языке Python,
+# а затем выведите полученный результат на экран: √(arccos3x - arcsin2y)/arctg|x2 - y2| + 5√π
+
+from cmath import *
 def find_result():
-    x = int(input('Введите х: '))
-    y = int(input('Введите y: '))
-    z = 3 * math.tan(abs(math.sqrt(x + y * 2) - math.pi)) - math.atan(3 * (math.sqrt(x) + y * 2))
+    x = 1 / 3
+    y = 1 / 3
+    z = (sqrt(math.acos(3 * x) - math.asin(2 * y))) / math.atan(abs(x * 2 - y * 2)) + 5 * sqrt(math.pi)
     print(round(z, 2))
 
 
