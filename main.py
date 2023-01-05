@@ -229,3 +229,14 @@ import math
 #
 #
 # find_result()
+#
+# Задача 15: Вычислите значение арифметического выражения при заданных значениях переменных
+# и выведите полученный результат на экран: √(log2(mn+2 - 3e)):(ln(2m) + lg(4n)) при m=5, n=2.
+#
+# def find_result():
+#     m = 5
+#     n = 2
+#     o = math.sqrt(math.log2(m * n + 2 - 3 * math.e)) / (math.log(2 * m) + math.log(4 * n))
+#     print(round(o, 2))
+#
+# find_result()
