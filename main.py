@@ -272,8 +272,8 @@ from cmath import *
 def find_result():
     x = 1 / 3
     y = 1 / 3
-    z = (sqrt(math.acos(3 * x) - math.asin(2 * y))) / math.atan(abs(x * 2 - y * 2)) + 5 * sqrt(math.pi)
-    print(round(z, 2))
+    z = (sqrt(math.acos(3 * x) - math.asin(2 * y))) /(math.atan(abs(x * 2 - y * 2)) + 5 * sqrt(math.pi))
+    print(z)
 
 
 find_result()
