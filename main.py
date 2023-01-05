@@ -264,16 +264,29 @@ import math
 #
 #
 # find_result()
-
+#
 # Задача 18. Запишите арифметическое выражение на языке Python,
 # а затем выведите полученный результат на экран: √(arccos3x - arcsin2y)/arctg|x2 - y2| + 5√π
+#
+# from cmath import *
+# def find_result():
+#     x = 1 / 3
+#     y = 1 / 3
+#     z = (sqrt(math.acos(3 * x) - math.asin(2 * y))) /(math.atan(abs(x * 2 - y * 2)) + 5 * sqrt(math.pi))
+#     print(z)
+#
+#
+# find_result()
 
-from cmath import *
-def find_result():
-    x = 1 / 3
-    y = 1 / 3
-    z = (sqrt(math.acos(3 * x) - math.asin(2 * y))) /(math.atan(abs(x * 2 - y * 2)) + 5 * sqrt(math.pi))
-    print(z)
-
-
-find_result()
+# Задача 19. Запишите арифметическое выражение на языке Python,
+# а затем выведите полученный результат на экран: √(arccos3x - arcsin2y)/arctg|x2 - y2| + 5√π
+#
+# from cmath import sqrt
+# def find_result():
+#     x = 1/3
+#     y = 1/2
+#     z = (sqrt(math.acos(3 * x) - math.asin(2 * y)))/ (math.atan(abs(x * 2 - y * 2) + 5 * math.sqrt(math.pi)))
+#     print(z)
+#
+#
+# find_result()
