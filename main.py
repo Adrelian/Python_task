@@ -161,3 +161,21 @@
 #
 # a = (num_1 + num_2 - num_3 - num_4) * num_5
 # print(a)
+#
+# Задача 11. Выведите на экран результат вычисления sin(π/6) и cos(45°) округлив результат до двух знаков после десятичной точки
+#
+# import math
+# n_gradus = int(input("Введите градус угла: "))
+#
+#
+# def gradus_cos(gradus):
+#     print(f"Косинус угла в {gradus} равен {round(math.cos(gradus), 2)}")
+#
+#
+# def radian():
+#     print(f"Синус угла pi/2 равен {math.sin(math.pi/2)}")
+#
+#
+# gradus_cos(n_gradus)
+# radian()
+
