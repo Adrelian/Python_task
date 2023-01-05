@@ -290,3 +290,12 @@ import math
 #
 #
 # find_result()
+
+# Задача 20. Вычислите значение арифметического выражения |3√π4 - 8eπ|/ln9.7.
+# Округлите результат до сотых и выведите его на экран.
+
+def find_result():
+    z = (abs(pow(math.sqrt(math.pi * 4), 1/3) - 8 * math.e * math.pi)) / math.log(9.7)
+    print(round(z, 3))
+
+find_result()
