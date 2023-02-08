@@ -387,9 +387,83 @@
 #
 # Задача 2.9 'Дана строка 'Вот и пришла осень золотая!'.
 # Возьмите ее в кавычки «» и выведите результат на экран. Шестнадцатиричные коды кавычек в Юникоде: 00AB и 00BB.
+#
+# print("\u0022Вот и пришла осень золотая!\u0022")
 
-a = "00AB"
+# 2.10.* Подсчитайте количество символов в строке '1a\u0398\t\u03B43s'.
+# Сделайте это сперва устно, а затем проверьте себя программно.
 
-b = "00BB"
+# def array_search(A:list, N:int, x:int):
+#     """
+#     Осуществляет поиск числа X в массиве А.
+#     От 0 до N-1 индекса включительно
+#     Если в массиве несколько элементов равных Х, то вернуть индекс первого по счёту
+#     :param A:
+#     :param N:
+#     :param x:
+#     :return: индекс элемента х в массиве А или -1, если такого числа нет
+#     """
+#     for k in range(N):
+#         if A[k] == x:
+#             return k
+#     return -1
+#
+#
+# def test_array_search():
+#     A1 = [1, 2, 3, 4, 5]
+#     m = array_search(A1, 5, 8)
+#     if m == -1:
+#         print("#test1 - ok")
+#     else:
+#         print("test1 - fail")
+#
+#     A2 = [-1, -2, -3, -4, -5]
+#     m = array_search(A2, 5, -3)
+#     if m == 2:
+#         print("#test2 - ok")
+#     else:
+#         print("test2 - fail")
+#
+#     A3 = [10, 20, 30, 10, 10]
+#     m = array_search(A3, 5, 10)
+#     if m == 0:
+#         print("#test3 - ok")
+#     else:
+#         print("test3 - fail")
+#
+# test_array_search()
 
-print(f"{a}'Вот и пришла осень золотая!'{b}")
+
+# def invert_array(arr:list, size_arr:int):
+#     """
+#     Разворот массива
+#     в рамках индекса от 0 до -1
+#     :param arr: входной массив
+#     :param size_arr: размер массива
+#     :return:
+#     """
+#     for k in range(size_arr//2):
+#         arr[k], arr[size_arr - 1 - k] = arr[size_arr - 1 - k], arr[k]
+#
+#
+# def test_invert_array():
+#     a1 = [1, 2, 3, 4, 5]
+#     print(a1)
+#     invert_array(a1, 5)
+#     print(a1)
+#     if a1 == [5, 4, 3, 2, 1]:
+#         print("#test1 - ok")
+#     else:
+#         print("test1 - fail")
+#
+#     a2 = [0, 0, 0, 0, 0, 0, 0, 0, 10]
+#     print(a2)
+#     invert_array(a2, 9)
+#     print(a2)
+#     if a2 == [10, 0, 0, 0, 0, 0, 0, 0, 0]:
+#         print("#test2 - ok")
+#     else:
+#         print("test2 - fail")
+#
+# test_invert_array()
+
