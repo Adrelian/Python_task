@@ -467,3 +467,147 @@
 #
 # test_invert_array()
 
+# arr = [1, 2, 3, 4, 5,]
+# temp = arr[0]
+# for k in range(len(arr) - 1):
+#     arr[k] = arr[k + 1]
+# arr[len(arr) - 1] = temp
+#
+# print(arr)
+
+# arr = [True] * 100
+# print(arr)
+# arr[0] = arr[1] = False
+# for k in range(2, 100):
+#     if arr[k]:
+#         for m in range(k*k, 100, k):
+#             arr[m] = False
+# print(arr)
+# for k in range(100):
+#     print(k, "-", "простое" if arr[k] else "составное")
+
+
+# def matryoshka (n):
+#     if n == 1:
+#         print("Матрёшечка")
+#     else:
+#         print("Верх мартешка, n=", n)
+#         matryoshka(n-1)
+#         print("Низ матрёшки n=", n)
+#
+# matryoshka(5)
+#
+# import graphics as gr
+# window = gr.GraphWin("Game", 600, 600)
+# alpha = 0.8
+#
+#
+# def fractal(A, B, C, D, deep=100):
+#     if deep < 1:
+#         return
+#     for M, N in [(A, B), (B, C), (C, D), (D, A)]:
+#         gr.Line(gr.Point(*M), gr.Point(*N)).draw(window)
+#     A1 = (A[0] * (1 - alpha) + B[0] * alpha,
+#           A[1] * (1 - alpha) + B[1] * alpha)
+#     B1 = (B[0] * (1 - alpha) + C[0] * alpha,
+#           B[1] * (1 - alpha) + C[1] * alpha)
+#     C1 = (C[0] * (1 - alpha) + D[0] * alpha,
+#           C[1] * (1 - alpha) + D[1] * alpha)
+#     D1 = (D[0] * (1 - alpha) + A[0] * alpha,
+#           D[1] * (1 - alpha) + A[1] * alpha)
+#     fractal(A1, B1, C1, D1, deep - 1)
+#
+# fractal((100, 100), (500, 100), (500, 500), (100, 500))
+
+
+# def factorial(n: int):
+#     assert n >= 0, "Факториал отрицательного числа не определён"
+#     if n == 0:
+#         return 1
+#     return factorial(n - 1) * n
+#
+#
+# print(factorial(3))
+
+# def gcd(a, b):
+#     if a == b:
+#         return a
+#     elif a > b:
+#         return gcd(a - b, b)
+#     else:  # a < b
+#         return gcd(a, b - a)
+#
+#
+# print(gcd(10, 25))
+#
+#
+# def new_gcd(a, b):
+#     if b == 0:
+#         return a
+#     else:
+#         return new_gcd(b, a % b)
+#
+#
+# print(new_gcd(10, 25))
+#
+#
+# def little_gcd(a, b):
+#     return a if b == 0 else little_gcd(b, a % b)
+#
+#
+# print(little_gcd(10, 25))
+
+# import time
+# start_time = time.time()
+#
+#
+# def power(a: float, n: int):
+#     assert n > 0, "Степень должна быть положительной"
+#     if n == 0:
+#         return 1
+#     elif n % 2 == 1:  # нечётная степень
+#         return pow(a, n - 1) * a
+#     else:  # степень чётная
+#         return pow(a ** 2, n//2)
+#
+#
+# (power(4, 10000000))
+# print("--- %s seconds ---" % (time.time() - start_time))
+#
+# (power(4, 10000001))
+# print("--- %s seconds ---" % (time.time() - start_time))
+
+import turtle
+import os
+
+turtle.shape('turtle')
+
+# forward = 10
+# x = -10
+# y = -10
+# for i in range(12):
+#     turtle.color("green")
+#     for i in range(4):
+#         turtle.fd(forward)
+#         turtle.lt(90)
+#     turtle.penup()
+#     turtle.goto(x, y)
+#     turtle.pendown()
+#
+#     x -= 10
+#     y -= 10
+#     forward = forward + 20
+n = 30
+for i in range(12):
+    turtle.fd(50)
+    turtle.stamp()
+    turtle.lt(180)
+    turtle.fd(50)
+    turtle.home()
+    turtle.lt(n)
+    n+=30
+
+
+os.system("pause")
+
+
