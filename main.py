@@ -577,10 +577,10 @@
 # (power(4, 10000001))
 # print("--- %s seconds ---" % (time.time() - start_time))
 
-import turtle
-import os
-
-turtle.shape('turtle')
+# import turtle
+# import os
+#
+# turtle.shape('turtle')
 
 # forward = 10
 # x = -10
@@ -597,17 +597,75 @@ turtle.shape('turtle')
 #     x -= 10
 #     y -= 10
 #     forward = forward + 20
-n = 30
-for i in range(12):
-    turtle.fd(50)
-    turtle.stamp()
-    turtle.lt(180)
-    turtle.fd(50)
-    turtle.home()
-    turtle.lt(n)
-    n+=30
+# n = 30
+# for i in range(12):
+#     turtle.fd(50)
+#     turtle.stamp()
+#     turtle.lt(180)
+#     turtle.fd(50)
+#     turtle.home()
+#     turtle.lt(n)
+#     n+=30
+#
+#
+# os.system("pause")
+
+# def genarate_number(N: int, M: int, prefix=None):
+#     """
+#     Функция генерирует все числа (с лидирующими нулями) в N-ричной системе счисления (N <= 10) длинны М
+#     :param N: Основание системы счисления
+#     :param M: длинна числа
+#     :param prefix:
+#     :return:
+#     """
+#     prefix = prefix or []
+#     if M == 0:
+#         print(prefix)
+#         return
+#     for digit in range(N):
+#         prefix.append(digit)
+#         genarate_number(N, M-1, prefix)
+#         prefix.pop()
+#
+#
+# genarate_number(3, 3)
 
 
-os.system("pause")
-
+# #Однопроходный алгроритм
+# def find(number, A):
+#     """
+#     Ищет х в А и возвращает True, если такое число есть, False если такого числа нет
+#     :param number: искомое повторяющееся число
+#     :param A: Список с числами
+#     :return: Флаг, истина или лож в зависимости от результата
+#     """
+#     flag = False
+#     for x in A:
+#         if number == x:
+#             flag = True
+#             break
+#     return flag
+#
+# def generate_permutations(N: int, M: int = -1, prefix=None):
+#     """
+#     Генерация всех перестановок N чисел в M позициях, начиная с префиксом prefix
+#     :param N: числа от 1 до N для перебора комбинация
+#     :param M: кол-во позиция для перестановки
+#     :param prefix:
+#     :return:
+#     """
+#     M = N if M == -1 else M  # по умолчанию N чисел в N позициях
+#     prefix = prefix or []
+#     if M == 0:
+#         print(*prefix, end=", ", sep="")  # развернуть список как отдельные числа
+#         return
+#     for number in range(1, N + 1):
+#         if find(number, prefix):
+#             continue
+#         prefix.append(number)
+#         generate_permutations(N, M - 1, prefix)
+#         prefix.pop()
+#
+#
+# generate_permutations(5, 5)
 
